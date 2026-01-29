@@ -1,3 +1,4 @@
+/* ...existing code... */
 * {
   box-sizing: border-box;
 }
@@ -32,6 +33,39 @@ h2 {
   border-bottom: 2px solid #e5e7eb;
   padding-bottom: 10px;
   margin-bottom: 25px;
+}
+
+/* Top navigation — improved visual style */
+.top-nav {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  margin: 18px 0;
+  flex-wrap: wrap;
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
+.top-nav a {
+  background: #26323a;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: background 0.15s ease, transform 0.08s ease;
+  display: inline-block;
+}
+
+.top-nav a:hover,
+.top-nav a:focus {
+  background: #33464e;
+  transform: translateY(-3px);
+  outline: none;
+}
+
+.top-nav a:active {
+  transform: translateY(-1px);
 }
 
 /* SKILLS */
@@ -99,6 +133,22 @@ a:hover {
   text-decoration: underline;
 }
 
+/* EXPERIENCE MEDIA */
+.experience-media {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.experience-media img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
 /* FOOTER */
 footer {
   text-align: center;
@@ -118,3 +168,10 @@ footer {
     max-width: 100%;
   }
 }
+
+/* Small-screen tweaks for the top nav */
+@media (max-width: 600px) {
+  .top-nav { font-size: 0.95rem; gap: 10px; }
+  .top-nav a { padding: 8px 12px; }
+}
+/* ...existing code... */

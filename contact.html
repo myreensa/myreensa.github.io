@@ -22,14 +22,33 @@
 
   <main>
     <section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:samuel.myreen@gmail.com">samuel.myreen@gmail.com</a></p>
-    <p>Tel: +358458934969</p>
-    <p>
-      <a href="https://github.com/myreensa" target="_blank">GitHub</a> |
-      <a href="https://www.linkedin.com/in/samuel-myr%C3%A9en-66b751280/" target="_blank">LinkedIn</a>
-    </p>
-  </section>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:samuel.myreen@gmail.com">samuel.myreen@gmail.com</a></p>
+      <p>Tel: +358458934969</p>
+      <p>
+        <a href="https://github.com/myreensa" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/samuel-myr%C3%A9en-66b751280/" target="_blank">LinkedIn</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>Send me a message</h2>
+      <form action="https://formsubmit.co/samuel.myreen@gmail.com" method="POST" class="contact-form">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New message from portfolio site">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
   </main>
 
   <footer>
